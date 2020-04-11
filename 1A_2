@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    int quantity;
+    float price, discount, expenses;
+    printf("Enter the quantity: ");
+    scanf("%d", &quantity);
+    printf("Enter the price of an item: ");
+    scanf("%f", &price);
+    expenses=price*quantity;
+    if(quantity>1000)
+        discount=expenses*1/10;
+    else
+        discount=0;
+    expenses=expenses-discount;
+    printf("The expenses are: %f", expenses);
+}
