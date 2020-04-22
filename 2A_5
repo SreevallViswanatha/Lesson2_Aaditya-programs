@@ -11,11 +11,11 @@ int main()
     scanf("%d", &secondnumber);
     if(firstnumber>secondnumber)
     {
-        printf("\nThe first number, %d, is greater than the second number, %d\n", firstnumber, secondnumber);
+        printf("\nThe first number, %d, is greater\n", firstnumber);
     }
     else if(secondnumber>firstnumber)
     {
-        printf("\nThe first number, %d, is less than the second number, %d\n", firstnumber, secondnumber);
+       printf("\nThe second number, %d, is greater.\n", secondnumber);
     }
     else
     {
