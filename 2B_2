@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+//Take three numbers from the user and display the largest.
+int main()
+{
+
+    int firstnumber, secondnumber, thirdnumber;
+    printf("Enter the first number: ");
+    scanf("%d", &firstnumber);
+    printf("Enter the second number: ");
+    scanf("%d", &secondnumber);
+    printf("Enter the third number: ");
+    scanf("%d", &thirdnumber);
+    if(firstnumber>secondnumber)
+    {
+        if(firstnumber>thirdnumber)
+        {
+            printf("The largest number is: %d", firstnumber);
+        }
+        else
+        {
+            printf("The largest number is: %d", thirdnumber);
+        }
+    }
+    else
+    {
+        if(secondnumber>thirdnumber)
+        {
+            printf("The largest number is: %d", secondnumber);
+        }
+        else
+        {
+            printf("The largest number is: %d", thirdnumber);
+        }
+    }
+}
