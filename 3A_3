@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<math.h>
+//Given three points (x1, y1), (x2, y2), and (x3, y3), write a program to check if all the three points fall on one straight line.
+int main()
+{
+
+   float x1, x2, x3, y1, y2, y3, slope12, slope13, slope23;
+   printf("Enter the value of x1: ");
+   scanf("%f", &x1);
+   printf("Enter the value of x2: ");
+   scanf("%f", &x2);
+   printf("Enter the value of x3: ");
+   scanf("%f", &x3);
+
+   printf("Enter the value of y1: ");
+   scanf("%f", &y1);
+   printf("Enter the value of y2: ");
+   scanf("%f", &y2);
+   printf("Enter the value of y3: ");
+   scanf("%f", &y3);
+
+   slope12=(y2-y1)/(x2-x1);
+   slope13=(y3-y1)/(x3-x1);
+   slope23=(y3-y2)/(x3-x2);
+
+   if((slope12==slope13)&&(slope13==slope23))
+   {
+       printf("The points are co-linear.");
+   }
+   else
+   {
+       printf("The points are not co-linear.");
+   }
+}
