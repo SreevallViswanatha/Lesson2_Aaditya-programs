@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+//WAP to accept price and quantity and display Amount, Discount, Tax and Net amount:
+//Give a discount of 10% for quantity less than 5, if the quantity is more than 5 give 20% discount. Give further discount of 5% if the amount crosses $1000.
+
+int main()
+{
+
+    int quantity;
+    float price, discount, Total_Discount, Tax, Amount, Net_Amount, Total_Amount;
+    printf("Enter the price: ");
+    scanf("%f", &price);
+    printf("Enter the quantity: ");
+    scanf("%d", &quantity);
+
+    if(quantity<=5)
+    {
+        discount=0.1;
+    }
+    else
+    {
+        discount=0.2;
+    }
+
+    Amount=(price*quantity);
+    Total_Amount=Amount-(Amount*discount);
+
+    if(Total_Amount>10000)
+    {
+        Total_Amount=Total_Amount-(Amount*0.05);
+    }
+    Tax=0.5*Total_Amount;
+    Total_Discount=Amount-Total_Amount;
+    Net_Amount=Total_Amount+Tax;
+    printf("\nThe amount is: %.2f\n", Amount);
+    printf("\nThe discount is: %.2f\n", Total_Discount);
+    printf("\nThe tax is:%.2f\n", Tax);
+    printf("\nThe net amount is: %.2f\n", Net_Amount);
+}
