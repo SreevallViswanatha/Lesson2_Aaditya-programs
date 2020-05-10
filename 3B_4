@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+//WAP to accept two numbers and change both the numbers to the largest.
+int main()
+{
+
+    int firstnumber, secondnumber;
+    printf("Enter the first number: ");
+    scanf("%d", &firstnumber);
+    printf("Enter the second number: ");
+    scanf("%d", &secondnumber);
+
+    if(firstnumber>secondnumber)
+    {
+        secondnumber=firstnumber;
+    }
+    else
+    {
+        firstnumber=secondnumber;
+    }
+    printf("The first number is: %d\n", firstnumber);
+     printf("The second number is: %d", secondnumber);
+}
