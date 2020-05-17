@@ -1,0 +1,26 @@
+int marks1, marks2;
+   float percentage_marks;
+
+   printf("Enter the marks for subject1: ");
+   scanf("%d", &marks1);
+
+    printf("Enter the marks for subject2: ");
+    scanf("%d", &marks2);
+
+   if(((marks1>80)&&(marks2>80))||((percentage_marks>80)))
+   {
+       printf("The student is in grade A.");
+   }
+   else if(((percentage_marks<80)&&(percentage_marks>75))&&((marks1<=80)&&(marks2<=80)))
+   {
+       printf("The student is in grade B+.");
+   }
+   else if(((percentage_marks<80)&&(percentage_marks>75))&&((marks1<=80)&&(marks2<=80)))
+   {
+       printf("The student is in grade B.");
+   }
+   else
+   {
+       printf("The student is in grade C.");
+   }
+}
