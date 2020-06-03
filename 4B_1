@@ -1,49 +1,55 @@
-// WAP to accept the employee grade and salary and display the net salary.
-
 #include <stdio.h>
 #include <stdlib.h>
-main()
+//WAP to accept Employee grade and salary and display the net salary.
+int main()
 {
-    int grade;
-    float HRA, salary, DA, PF, net_salary;
 
-    printf("Enter the employee's grade:");
+    int salary, grade;
+    float HRA, DA, PF, net_salary;
+
+    printf("Enter the salary of the employee: ");
+    scanf("%d", &salary);
+
+    printf("enter the grade of the employee: ");
     scanf("%d", &grade);
-
-    printf("Enter the salary:");
-    scanf("%f", &salary);
 
     if(grade==1)
     {
-        HRA=salary*0.5;
-        DA=salary*0.2;
-        PF=salary*0.05;
+        HRA=0.5*salary;
+        DA=0.2*salary;
+        PF=0.05*salary;
     }
-    if(grade==2)
+    else if(grade==2)
     {
-        HRA=salary*0.4
-        DA=salary*0.3;
-        PF=salary*0.03;
+        HRA=0.4*salary;
+        DA=0.3*salary;
+        PF=0.03*salary;
     }
-    if(grade==3)
+    else if(grade==3)
     {
-        HRA=salary*0.3;
-        DA=salary*0.15;
-        PF=salary*0.04;
+        HRA=0.3*salary;
+        DA=0.15*salary;
+        PF=0.04*salary;
     }
-    if(grade==4)
+    else if(grade==4)
     {
-        HRA=salary*0.2;
-        DA=salary*0.1;
-        PF=salary*0.05;
+        HRA=0.2*salary;
+        DA=0.1*salary;
+        PF=0.05*salary;
     }
-    if(grade==5)
+    else if(grade==5)
     {
-        HRA=salary*0.1;
-        DA=salary*0.05;
-        PF=salary*0.02;
+        HRA=0.1*salary;
+        DA=0.05*salary;
+        PF=0.01*salary;
     }
+
     net_salary=salary+HRA+DA-PF;
 
-    printf("The net salary is:%f.", net_salary);
+    printf("\nThe salary is: %d\n", salary);
+    printf("\nThe grade is: %d\n", grade);
+    printf("\nThe HRA is: %.2f\n", HRA);
+    printf("\nThe DA is: %.2f\n", DA);
+    printf("\nThe PF is: %.2f\n", PF);
+    printf("\nThe net salary is: %.2f\n", net_salary);
 }
