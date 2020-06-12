@@ -69,6 +69,6 @@ int main()
    }
    else
    {
-       printf("There is no month like that.Please enter a month from 1 to 12.");
+       printf("There is no month like that.\nPlease enter a month from 1 to 12.");
    }
 }
