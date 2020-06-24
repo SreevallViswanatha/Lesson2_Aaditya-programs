@@ -4,45 +4,44 @@
 int main()
 {
 
-  int day, wage, bonus, hours;
+   int day, wage, bonus, hours;
 
-  printf("Enter the number of the day: ");
-  scanf("%d", &day);
+   printf("Enter the number of the day: ");
+   scanf("%d", &day);
 
-  printf("Enter the hours of the day: ");
-  scanf("%d", &hours);
+   printf("Enter the number of numbers the worker worked: ");
+   scanf("%d", &hours);
 
-  if((day==1)||(day==2))
-  {
-      wage=100*hours;
-  }
-  else if((day==3)||(day==4)||(day==5))
-  {
-      wage=110*hours;
-  }
-  else if(day==6)
-  {
-      wage=150*hours;
-  }
-  else if(day==7)
-  {
-      wage=200*hours;
-  }
-  else
-  {
-      printf("There is no day like that.\nPlease enter a day from 1 to 7.");
-      exit(0);
-  }
-  if(wage>1000)
-  {
-      bonus=0.1*wage;
-  }
-  else
-  {
-      bonus=0;
-  }
+   if((day==1)||(day==2))
+   {
+       wage=100*hours;
+   }
+   else if((day==3)||(day==4)||(day==5))
+   {
+       wage=110*hours;
+   }
+   else if(day==6)
+   {
+       wage=150*hours;
+   }
+   else if(day==7)
+   {
+       wage=200*hours;
+   }
+   else
+   {
+       printf("There is no such day as that.\nPlease enter a number from 1 to 7.");
+       exit(0);
+   }
+   if(wage>1000)
+   {
+       bonus=0.1*wage;
+   }
+   else
+   {
+       bonus=0;
+   }
 
-  wage=wage+bonus;
-
-  printf("The wage is: %d", wage);
+   wage=wage+bonus;
+   printf("The wage is: %d", wage);
 }
