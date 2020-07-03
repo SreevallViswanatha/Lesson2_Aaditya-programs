@@ -23,7 +23,7 @@ int main()
     {
         printf("The second number, %d, is the smallest number.", secondnumber);
     }
-    else if((firstnumber/thirdnumber)&&(secondnumber/thirdnumber))
+    else
     {
         printf("The third number, %d, is the smallest number.", thirdnumber);
     }
