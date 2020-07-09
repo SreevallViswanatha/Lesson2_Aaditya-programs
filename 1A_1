@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 //WAP to ask user to enter a number less than 10, if the user enters a number less than 10, print : 
-//“What an obedient servant you are!” else print The number is not less than 10.
+//“What an obedient servant you are!” else print “the number is not less than 10 ”.
 int main()
 {
 
