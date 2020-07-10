@@ -32,3 +32,4 @@ int main()
         printf("\nThe original number, %d, is different from the reverse number, %d.\n", num, revnum);
     }
 }
+
