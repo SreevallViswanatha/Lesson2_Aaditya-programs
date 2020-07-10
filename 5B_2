@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+//WAP to accept two integers and check whether they are equal or not.
+int main()
+{
+
+   int a, b;
+
+   printf("Enter the first number: ");
+   scanf("%d", &a);
+
+   printf("Enter the second number: ");
+   scanf("%d", &b);
+
+   if(a==b)
+   {
+       printf("The numbers are equal.");
+   }
+   else
+   {
+       printf("The numbers are unequal.");
+   }
+}
