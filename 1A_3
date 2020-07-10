@@ -7,19 +7,16 @@
 int main()
 {
 
-   int current_year, join_year, yos;
-   printf("\nEnter the current year: ");
-   scanf("%d", &current_year);
-   printf("\nEnter the joining year: ");
-   scanf("%d", &join_year);
-   yos=current_year-join_year;
-   if(yos>3)
-   {
-       printf("\nThe bonus is: $2500.");
-   }
+    int current_year, join_year, yos;
+    printf("Enter the current year: ");
+    scanf("%d", &current_year);
+    printf("Enter the joining year of the employee: ");
 
-   else
-   {
-       printf("\nNo bonus.");
-   }
+    scanf("%d", &join_year);
+    yos=current_year-join_year;
+    if(yos>3)
+        printf("The bonus of the employee is: $2500.");
+    else
+        printf("No bonus.");
 }
+
