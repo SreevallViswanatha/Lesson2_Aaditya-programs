@@ -11,9 +11,15 @@ int main()
     printf("Enter a number: ");
     scanf("%d", &number);
     if(number==1)
+    {
         printf("You would go to heaven.");
+    }
     else if(number==2)
-        printf("Hell was created with you in mind.");
+    {
+        printf(“Hell was created with you in mind.”);
+    }
     else
+    {
         printf("How about mother earth.");
-}
+    }
+ }
