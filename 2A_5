@@ -22,3 +22,4 @@ int main()
         printf("\nThe first number, %d, is equal to the second number, %d.\n", firstnumber, secondnumber);
     }
 }
+
