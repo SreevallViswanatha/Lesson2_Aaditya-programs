@@ -4,20 +4,20 @@
 int main()
 {
 
-   int a, b;
+    int firstnumber, secondnumber;
 
-   printf("Enter the first number: ");
-   scanf("%d", &a);
+    printf("Enter the first number: ");
+    scanf("%d", &firstnumber);
 
-   printf("Enter the second number: ");
-   scanf("%d", &b);
+    printf("Enter the second number: ");
+    scanf("%d", &secondnumber);
 
-   if(a==b)
-   {
-       printf("The numbers are equal.");
-   }
-   else
-   {
-       printf("The numbers are unequal.");
-   }
+    if(firstnumber==secondnumber)
+    {
+        printf("Both are equal.");
+    }
+    else
+    {
+        printf("Both are unequal.");
+    }
 }
