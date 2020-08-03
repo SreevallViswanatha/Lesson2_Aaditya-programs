@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-//WAP to accept the height of a person in centimeter and categorize the person according to their height.
-//•If the height is greater than or equal to 165cm, then the person is "Tall".
-//•If the height is equal to 150, the person is "Average height".
-//•If the height is less than 150, the person is a "Dwarf".
+//WAP to accept the height of a person in centimeter and categorize the persoIf the heign according to their height.
+//If the height is greater than or equal to 165cm, then the person is "Tall".
+//If the height is equal to 150, the person is "Average height".
+//If the height is less than 150, the person is a "Dwarf".
 
 int main()
 {
@@ -15,15 +15,14 @@ int main()
 
     if(height>=165)
     {
-        printf("The person is tall.");
+        printf("The person, whose height is %d, is tall.", height);
     }
     else if(height==150)
     {
-        printf("The person is average height.");
+        printf("The person, whose height is %d, is average height.", height);
     }
     else
     {
-        printf("The person is a dwarf.");
+        printf("The person, whose height is %d, is a dwarf.", height);
     }
 }
-
