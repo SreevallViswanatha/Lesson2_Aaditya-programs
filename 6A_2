@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+//WAP to find the largest of the three numbers.
+int main()
+{
+
+    int firstnumber, secondnumber, thirdnumber;
+
+    printf("Please enter the first number: ");
+    scanf("%d", &firstnumber);
+
+    printf("Please enter the second number: ");
+    scanf("%d", &secondnumber);
+
+    printf("Please enter the third number: ");
+    scanf("%d", &thirdnumber);
+
+    if((firstnumber>secondnumber)&&(firstnumber>thirdnumber))
+    {
+        printf("The first number, which is %d, is the greatest of all three.", firstnumber);
+    }
+    else if((secondnumber>firstnumber)&&(secondnumber>thirdnumber))
+    {
+        printf("The second number, which is %d, is the greatest of all three.", secondnumber);
+    }
+    else if((firstnumber==secondnumber)&&(secondnumber==thirdnumber))
+    {
+       printf("All of them are equal.");
+    }
+    else
+    {
+        printf("The third number, which is %d, is the greatest of all three.", thirdnumber);
+    }
+}
