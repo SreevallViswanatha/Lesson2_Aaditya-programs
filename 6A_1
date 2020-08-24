@@ -27,3 +27,4 @@ int main()
         printf("The person, whose height is %d, is a dwarf.", height);
     }
 }
+
