@@ -14,6 +14,8 @@ int main()
 
     printf("Please enter the third number: ");
     scanf("%d", &thirdnumber);
+    
+    //Checking the conditions:
 
     if((firstnumber>secondnumber)&&(firstnumber>thirdnumber))
     {
