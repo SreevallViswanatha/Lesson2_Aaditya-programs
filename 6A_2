@@ -4,33 +4,31 @@
 int main()
 {
 
-    int firstnumber, secondnumber, thirdnumber;
+   int firstnumber, secondnumber, thirdnumber;
 
-    printf("Please enter the first number: ");
-    scanf("%d", &firstnumber);
+   printf("Enter the first number: ");
+   scanf("%d", &firstnumber);
 
-    printf("Please enter the second number: ");
-    scanf("%d", &secondnumber);
+   printf("Enter the second number:");
+   scanf("%d", &secondnumber);
 
-    printf("Please enter the third number: ");
-    scanf("%d", &thirdnumber);
-    
-    //Checking the conditions:
+   printf("Enter the third number: ");
+   scanf("%d", &thirdnumber);
 
-    if((firstnumber>secondnumber)&&(firstnumber>thirdnumber))
-    {
-        printf("The first number, which is %d, is the greatest of all three.", firstnumber);
-    }
-    else if((secondnumber>firstnumber)&&(secondnumber>thirdnumber))
-    {
-        printf("The second number, which is %d, is the greatest of all three.", secondnumber);
-    }
-    else if((firstnumber==secondnumber)&&(secondnumber==thirdnumber))
-    {
-       printf("All of them are equal.");
-    }
-    else
-    {
-        printf("The third number, which is %d, is the greatest of all three.", thirdnumber);
-    }
+   if((firstnumber>secondnumber)&&(firstnumber>thirdnumber))
+   {
+       printf("The first number, which is %d, is the greatest.", firstnumber);
+   }
+   else if((secondnumber>firstnumber)&&(secondnumber>thirdnumber))
+   {
+       printf("The second number, which is %d, is the greatest.", secondnumber);
+   }
+   else if((thirdnumber>firstnumber)&&(thirdnumber>secondnumber))
+   {
+       printf("The third number, which is %d, is the greatest.", thirdnumber);
+   }
+   else if((firstnumber==secondnumber)&&(secondnumber==thirdnumber))
+   {
+       printf("The first number, which is %d, the second number, which is %d, and the third number, which is %d, are all equal.", firstnumber, secondnumber, thirdnumber);
+   }
 }
