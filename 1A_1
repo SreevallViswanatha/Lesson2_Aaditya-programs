@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    int number;
+    printf("Enter a number:");
+    scanf("%d", &number);
+    if(number<10)
+    {
+        printf("What an obedient servant you are.");
+    }
+    else
+    {
+        printf("The number is less than ten.");
+    }
+}
