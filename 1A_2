@@ -16,7 +16,7 @@ int main()
     {
         printf("There is no discount for the customer. The price is:%d.", price2);
     }
-    else if(price2>1000)
+    else
     {
         discount=price2*0.1;
         price3=price2-discount;
