@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+//While purchasing certain items, a discount of 10% is offered if the quantity purchased is more than 1000.
+//If quantity and price per item are input through the keyboard, write a program to calculate the total expenses.
+int main()
+{
+
+    int price, price2, price3, quantity, discount;
+    printf("Enter how much quantity you want: ");
+    scanf("%d", &quantity);
+    printf("Enter the price of the each quantity: please put no signs. ");
+    scanf("%d", &price);
+    price2=price*quantity;
+
+    if(price2<=1000)
+    {
+        printf("There is no discount for the customer. The price is:%d.", price2);
+    }
+    else if(price2>1000)
+    {
+        discount=price2*0.1;
+        price3=price2-discount;
+        printf("The discount is %d.\n The price is: %d", discount, price3);
+
+    }
+}
