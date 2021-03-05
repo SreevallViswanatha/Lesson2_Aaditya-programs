@@ -12,8 +12,11 @@ int main()
     {
         printf("What an obedient servant you are.");
     }
+    else if(number>10)
+    {
+        printf("The number is greater than ten.");
+    }
     else
     {
-        printf("The number is less than ten.");
-    }
+      printf("Invalid input.");
 }
